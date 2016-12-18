@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "webpack-dev-server --quiet --hot --inline --content-base src/",
+    "build": "rimraf dist && webpack",
+    "reinstall": "npm i rimraf && rimraf node_modules && npm uninstall -g elm && npm i -g elm && npm i && elm package install"
+  },
+  "dependencies": {
+    "elm": "^0.18.0",
+    "elm-hot-loader": "^0.5.3",
+    "elm-webpack-loader": "^4.0.0",
+    "html-webpack-plugin": "^2.24.1",
+    "node-elm-compiler": "^4.2.1",
+    "rimraf": "^2.5.4",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
